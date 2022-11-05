@@ -7,6 +7,7 @@ import Card from "./Card";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
 import Game from "../Img/Game.jpg";
+import l from "./Home.module.css";
 
 
 
@@ -94,6 +95,7 @@ export default function Home (){
         currentPage= {currentPage}
         paginado = {paginado}
         />
+        <div className={l.card}>
     {
         currentVideogames?.map(el => {
             return(
@@ -105,6 +107,7 @@ export default function Home (){
             );
         })
     }
+    </div>
     </div>
     </div>
 
